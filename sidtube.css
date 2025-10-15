@@ -1,0 +1,159 @@
+/* Βασική μορφοποίηση και ρυθμίσεις */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #181818;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #202020;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.sidtube-icon {
+    color: red;
+    margin-right: 5px;
+}
+
+.logo-text {
+    margin: 0;
+    font-weight: bold;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.header-center {
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+.search-bar {
+    display: flex;
+    border: 1px solid #303030;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    background: #121212;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    outline: none;
+}
+
+.search-bar button {
+    background: #303030;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-right .material-icons {
+    cursor: pointer;
+}
+
+/* Κεντρικό περιεχόμενο */
+.main-content {
+    display: flex;
+    padding-top: 60px; /* Για να μην κρύβεται κάτω από το header */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background-color: #202020;
+    padding-top: 10px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #aaa;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.sidebar-item:hover, .sidebar-item.active {
+    background-color: #303030;
+    color: #fff;
+}
+
+.sidebar-item .material-icons {
+    margin-right: 20px;
+}
+
+/* Πλέγμα βίντεο */
+.video-grid {
+    margin-left: 240px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.video-card {
+    background-color: #181818;
+}
+
+.video-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-info h3 {
+    margin: 10px 0 5px 0;
+    font-size: 16px;
+}
+
+.video-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
